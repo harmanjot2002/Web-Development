@@ -23,3 +23,19 @@ img{
     width:150px;
     height:150px;
 }
+
+/* CLASS SELECTORS */
+.pink{
+    border-radius:50%;
+}
+.white{
+    border-radius:30%;
+}
+
+/* ID SELECTORS */
+#name{
+    color:darkmagenta;
+}
+
+/* Classes can be given multiple times,whereas id is unique */
+/* Two classes can be assigned to a single element also,but 2 IDs cannot be given */
