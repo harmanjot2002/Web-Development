@@ -6,20 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
     <link rel="icon" href="favicon.ico">
-    <title>Harman</title>
+    <title>CSS</title>
 </head>
 <body>
     <div class="top-container">
-        <img src="cloud.jfif" alt="">
+        <!-- <img src="cloud.jfif" alt=""> -->
         <h1>I'm Harmanjot Kaur</h1>
         <p>a <span class="pro">pro</span>grammer</p>
-        <img src="cloud.jfif" alt="">
-        <img src="mountain.png" alt="">
+        <!-- <img src="cloud.jfif" alt="">
+        <img src="mountain.png" alt=""> -->
     </div>
     <div class="middle-container">
 
     </div>
     <div class="bottom-container">
+
+    </div>
+    <div class="position-relative1">
+
+    </div>
+    <div class="position-relative2">
+
+    </div>
+    <div class="position-absolute">
 
     </div>
     <!-- 
@@ -30,12 +39,41 @@
         Differnce between display:none and visiblility:hidden is that visibility hidden only hides it ,but leave some space for that element to show that something exist there,but display:none donot leave any space for that element. 
     -->
 
+
     <!--
          Positions:
         By default,position is static.
-        If we give it a relative position,then it will work only with corner properties such as top,bottom,left and right.
-        
+        If we give it a relative position,then it will work only with corner properties such as top,bottom,left and right.Position relative donot change position of any other element on screen.
+        Absolute positioning is different from relative positioning as giving right in relative moves it to left (opposite) as it takes it relative of original(static) position,whereas absolute positioning takes it to right only on setting right corner as it takes it relative to parent div(container).
+        To use absolute positioning,we have to make its parent container as relative.
+        position:fixed makes element fixed on its position,means it donot move that element even on scrolling the website.
     -->
 
+    <!--
+         Centering:
+        Text align:center and margin:auto
+        text-align:center only works as long as we have display as inline-block,but if we give some element a specific width,then it will not work.For that use margin:auto.
+    -->
+
+    <!-- 
+        Font family:
+        cursive,fantasy,inherit,monospace,sans-serif,serif
+        serif is by-defult family.(Evry letter has feet)
+        sans-serif(no feet)
+        fantasy and cursive are mostly not used as they are not easy to read.
+        monospace is used when we have some code like thing on our website,it gives every letter same width or spacing in between.
+        Giving 2 font-families separated by a comma means that we first it should try giving first font,if not valid,then second one.
+    -->
+
+    <!--
+        Font Size:
+        Font Size of 100% corresponds to 16px.
+        So 90 px will be 90/16%.
+        /* 16px=100%=1em */
+        em is dynamic,means if we add font size to one element on website and also to its parent container(e.g.parent div),then it will add both the sizes,but px is static,i.e,if we add size to parent container,then also,it will take siae of only present container.
+        To overcome problem of em,we use rem in place of em,rem basically doesnot affect size of present container because of upstream container's size.
+    -->
+
+    <!-- Line height specifies line spacing between two lines. -->
 </body>
 </html>
